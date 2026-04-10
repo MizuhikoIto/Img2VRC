@@ -1,9 +1,0 @@
-.env
-.env.*
-logs/
-state/
-public/
-output/
-.deploy-worktree/
-__pycache__/
-*.pyc
