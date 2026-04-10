@@ -13,11 +13,12 @@ Piwigo に保存された VRC 世界旅行写真からランダムに 15 枚を�
 
 ## 現在の前提
 
-- 画像ソースは `/var/www/smartworks/vrcwt/www/photo/upload` 配下です
+- 画像ソースは `PIWIGO_GALLERY_DIR` で指定したディレクトリ配下です
 - サブディレクトリを再帰的に探索します
 - 手動実行前提です
 - 公開用ディレクトリの例は `public/` です
 - 画像は相対パスで参照する `index.html` を生成します
+- 公開リポジトリに実サーバの絶対パスや内部構成を書かない方針です
 
 ## 必要環境
 
@@ -58,12 +59,14 @@ python3 scripts/build_random_slides.py
 - `public/updated_at.txt`
 - `logs/build_random_slides-<timestamp>.log`
 
+`logs/` と `state/` はローカル運用用です。`.gitignore` に含めており、公開対象にはしません。
+
 ## 主な設定値
 
 `config/example.env` の主な項目です。
 
 - `PIWIGO_GALLERY_DIR`
-  元画像ディレクトリ
+  元画像ディレクトリ。公開リポジトリ上では `/path/to/source/images` のようなプレースホルダを使います
 - `SLIDE_COUNT`
   抽出枚数
 - `MAX_EDGE_PX`
@@ -88,6 +91,7 @@ python3 scripts/build_random_slides.py
 - JPEG に統一して保存
 - staging で組み立てた後に publish へ反映
 - 標準出力とログファイルの両方へ記録
+- ログと `state/last_selected_sources.json` には、元画像の絶対パスではなく `PIWIGO_GALLERY_DIR` からの相対パスを記録
 - `--dry-run` では書き込みを行わず、候補選定と計画のみ確認
 
 ヘルプ:
@@ -115,6 +119,13 @@ scripts/deploy_github_pages.sh
 ```
 
 現時点では認証未設定でも、スクリプトの構成と必要環境変数を確認できます。
+
+## 公開リポジトリ運用時の注意
+
+- `config/example.env` には実値を書かず、プレースホルダだけを置きます
+- 実運用の値は `.env` や systemd 環境変数、CI secrets などから与えます
+- `logs/` と `state/` は公開対象外です
+- `state/last_selected_sources.json` は相対パスのみ保持し、元画像の絶対配置は残しません
 
 ## random.php の扱い
 

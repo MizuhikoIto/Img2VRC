@@ -139,6 +139,13 @@ def setup_logging(log_dir: Path) -> tuple[logging.Logger, Path]:
     return logger, log_path
 
 
+def source_label(source_path: Path, gallery_dir: Path) -> str:
+    try:
+        return source_path.relative_to(gallery_dir).as_posix()
+    except ValueError:
+        return source_path.name
+
+
 def iter_images(gallery_dir: Path) -> Iterable[Path]:
     for path in gallery_dir.rglob("*"):
         if path.is_file() and path.suffix.lower() in SUPPORTED_EXTENSIONS:
@@ -329,16 +336,16 @@ def publish_directory(staging_dir: Path, publish_dir: Path, logger: logging.Logg
         shutil.copytree(staging_dir, tmp_publish, dirs_exist_ok=True)
 
         if publish_dir.exists():
-            logger.info("moving current publish to backup: %s", backup_publish)
+            logger.info("moving current publish to backup directory")
             publish_dir.rename(backup_publish)
 
-        logger.info("promoting staging to publish: %s", publish_dir)
+        logger.info("promoting staged output to publish directory")
         tmp_publish.rename(publish_dir)
 
         if backup_publish.exists():
             shutil.rmtree(backup_publish)
     except Exception:
-        logger.exception("failed while publishing to %s", publish_dir)
+        logger.exception("failed while promoting staged output")
         if publish_dir.exists() and backup_publish.exists():
             shutil.rmtree(publish_dir)
             backup_publish.rename(publish_dir)
@@ -356,14 +363,11 @@ def build_slideshow(config: Config, dry_run: bool, seed: int | None) -> int:
     rng = random.Random(seed)
 
     logger.info("build started")
-    logger.info("gallery_dir=%s", config.gallery_dir)
-    logger.info("staging_dir=%s", config.staging_dir)
-    logger.info("publish_dir=%s", config.publish_dir)
     logger.info("slide_count=%s max_edge_px=%s jpeg_quality=%s", config.slide_count, config.max_edge_px, config.jpeg_quality)
-    logger.info("log_file=%s", log_path)
+    logger.info("log_file=%s", log_path.name)
 
     if not config.gallery_dir.is_dir():
-        raise RuntimeError(f"gallery directory not found: {config.gallery_dir}")
+        raise RuntimeError("gallery directory not found")
 
     candidates = select_candidates(config.gallery_dir, config.slide_count, rng)
     logger.info("candidate_count=%s", len(candidates))
@@ -379,7 +383,11 @@ def build_slideshow(config: Config, dry_run: bool, seed: int | None) -> int:
     if dry_run:
         logger.info("dry-run selected sources:")
         for index, source in enumerate(selected_sources, start=1):
-            logger.info("%02d source=%s", index, source)
+            logger.info(
+                "%02d source=%s",
+                index,
+                source_label(source, config.gallery_dir),
+            )
         logger.info("dry-run completed")
         return 0
 
@@ -398,7 +406,11 @@ def build_slideshow(config: Config, dry_run: bool, seed: int | None) -> int:
             source = next(candidate_iter)
             destination_name = planned_names[len(image_names)]
             destination_path = run_staging_dir / destination_name
-            logger.info("processing source=%s destination=%s", source, destination_name)
+            logger.info(
+                "processing source=%s destination=%s",
+                source_label(source, config.gallery_dir),
+                destination_name,
+            )
             try:
                 resize_and_save(
                     source,
@@ -407,11 +419,14 @@ def build_slideshow(config: Config, dry_run: bool, seed: int | None) -> int:
                     jpeg_quality=config.jpeg_quality,
                 )
             except Exception:
-                logger.exception("conversion failed for source=%s", source)
+                logger.exception(
+                    "conversion failed for source=%s",
+                    source_label(source, config.gallery_dir),
+                )
                 continue
 
             image_names.append(destination_name)
-            converted_sources.append(str(source))
+            converted_sources.append(source_label(source, config.gallery_dir))
     except StopIteration as exc:
         raise RuntimeError(
             f"unable to build {config.slide_count} slides from available images"
