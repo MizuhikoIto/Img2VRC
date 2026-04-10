@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+
+output/
+logs/
+state/
+
+.deploy-worktree/
