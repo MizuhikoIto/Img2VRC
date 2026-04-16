@@ -1,7 +1,349 @@
 {
-  "generated_at": "2026-04-13T18:05:03+09:00",
-  "group_count": 1,
+  "generated_at": "2026-04-16T23:59:01+09:00",
+  "group_count": 40,
   "groups": [
+    {
+      "event_id": 6,
+      "event_name": "#27 中南米編",
+      "group_id": 7,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_6",
+      "group_dir": "group_7",
+      "source_count": 102
+    },
+    {
+      "event_id": 6,
+      "event_name": "#27 中南米編",
+      "group_id": 8,
+      "group_name": "Jett班",
+      "event_dir": "event_6",
+      "group_dir": "group_8",
+      "source_count": 145
+    },
+    {
+      "event_id": 6,
+      "event_name": "#27 中南米編",
+      "group_id": 9,
+      "group_name": "Ruby班",
+      "event_dir": "event_6",
+      "group_dir": "group_9",
+      "source_count": 413
+    },
+    {
+      "event_id": 6,
+      "event_name": "#27 中南米編",
+      "group_id": 10,
+      "group_name": "初見そら班",
+      "event_dir": "event_6",
+      "group_dir": "group_10",
+      "source_count": 572
+    },
+    {
+      "event_id": 17,
+      "event_name": "#28 アフリカ編",
+      "group_id": 18,
+      "group_name": "初見そら班",
+      "event_dir": "event_17",
+      "group_dir": "group_18",
+      "source_count": 157
+    },
+    {
+      "event_id": 17,
+      "event_name": "#28 アフリカ編",
+      "group_id": 19,
+      "group_name": "Jett班",
+      "event_dir": "event_17",
+      "group_dir": "group_19",
+      "source_count": 289
+    },
+    {
+      "event_id": 17,
+      "event_name": "#28 アフリカ編",
+      "group_id": 20,
+      "group_name": "Ruby班",
+      "event_dir": "event_17",
+      "group_dir": "group_20",
+      "source_count": 481
+    },
+    {
+      "event_id": 17,
+      "event_name": "#28 アフリカ編",
+      "group_id": 21,
+      "group_name": "くろまんじ班",
+      "event_dir": "event_17",
+      "group_dir": "group_21",
+      "source_count": 55
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 38,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_37",
+      "group_dir": "group_38",
+      "source_count": 152
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 39,
+      "group_name": "Jett班",
+      "event_dir": "event_37",
+      "group_dir": "group_39",
+      "source_count": 398
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 40,
+      "group_name": "Ruby班",
+      "event_dir": "event_37",
+      "group_dir": "group_40",
+      "source_count": 99
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 41,
+      "group_name": "かくしむ班",
+      "event_dir": "event_37",
+      "group_dir": "group_41",
+      "source_count": 434
+    },
+    {
+      "event_id": 68,
+      "event_name": "ワーミーソック達の世界旅行",
+      "group_id": 69,
+      "group_name": "そら撮影分",
+      "event_dir": "event_68",
+      "group_dir": "group_69",
+      "source_count": 76
+    },
+    {
+      "event_id": 70,
+      "event_name": "#30 東南アジア編",
+      "group_id": 71,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_70",
+      "group_dir": "group_71",
+      "source_count": 179
+    },
+    {
+      "event_id": 70,
+      "event_name": "#30 東南アジア編",
+      "group_id": 72,
+      "group_name": "Jett班",
+      "event_dir": "event_70",
+      "group_dir": "group_72",
+      "source_count": 494
+    },
+    {
+      "event_id": 70,
+      "event_name": "#30 東南アジア編",
+      "group_id": 73,
+      "group_name": "初見そら班",
+      "event_dir": "event_70",
+      "group_dir": "group_73",
+      "source_count": 354
+    },
+    {
+      "event_id": 70,
+      "event_name": "#30 東南アジア編",
+      "group_id": 74,
+      "group_name": "しの班",
+      "event_dir": "event_70",
+      "group_dir": "group_74",
+      "source_count": 267
+    },
+    {
+      "event_id": 88,
+      "event_name": "#26 USA NY編",
+      "group_id": 89,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_88",
+      "group_dir": "group_89",
+      "source_count": 364
+    },
+    {
+      "event_id": 88,
+      "event_name": "#26 USA NY編",
+      "group_id": 91,
+      "group_name": "Ruby班",
+      "event_dir": "event_88",
+      "group_dir": "group_91",
+      "source_count": 108
+    },
+    {
+      "event_id": 93,
+      "event_name": "#25 USA東海岸編",
+      "group_id": 94,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_93",
+      "group_dir": "group_94",
+      "source_count": 140
+    },
+    {
+      "event_id": 93,
+      "event_name": "#25 USA東海岸編",
+      "group_id": 95,
+      "group_name": "Jett班",
+      "event_dir": "event_93",
+      "group_dir": "group_95",
+      "source_count": 189
+    },
+    {
+      "event_id": 93,
+      "event_name": "#25 USA東海岸編",
+      "group_id": 97,
+      "group_name": "さいたまのこばやし班",
+      "event_dir": "event_93",
+      "group_dir": "group_97",
+      "source_count": 120
+    },
+    {
+      "event_id": 99,
+      "event_name": "#24 USA西海岸編",
+      "group_id": 101,
+      "group_name": "Jett班",
+      "event_dir": "event_99",
+      "group_dir": "group_101",
+      "source_count": 280
+    },
+    {
+      "event_id": 99,
+      "event_name": "#24 USA西海岸編",
+      "group_id": 102,
+      "group_name": "初見そら班",
+      "event_dir": "event_99",
+      "group_dir": "group_102",
+      "source_count": 360
+    },
+    {
+      "event_id": 105,
+      "event_name": "#23 スペイン＆ポルトガル編",
+      "group_id": 107,
+      "group_name": "Ruby班",
+      "event_dir": "event_105",
+      "group_dir": "group_107",
+      "source_count": 131
+    },
+    {
+      "event_id": 105,
+      "event_name": "#23 スペイン＆ポルトガル編",
+      "group_id": 108,
+      "group_name": "初見そら班",
+      "event_dir": "event_105",
+      "group_dir": "group_108",
+      "source_count": 84
+    },
+    {
+      "event_id": 105,
+      "event_name": "#23 スペイン＆ポルトガル編",
+      "group_id": 109,
+      "group_name": "くろまんじ班",
+      "event_dir": "event_105",
+      "group_dir": "group_109",
+      "source_count": 291
+    },
+    {
+      "event_id": 110,
+      "event_name": "#22 フランス編",
+      "group_id": 111,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_110",
+      "group_dir": "group_111",
+      "source_count": 165
+    },
+    {
+      "event_id": 110,
+      "event_name": "#22 フランス編",
+      "group_id": 113,
+      "group_name": "Ruby班",
+      "event_dir": "event_110",
+      "group_dir": "group_113",
+      "source_count": 381
+    },
+    {
+      "event_id": 110,
+      "event_name": "#22 フランス編",
+      "group_id": 115,
+      "group_name": "くろまんじ班",
+      "event_dir": "event_110",
+      "group_dir": "group_115",
+      "source_count": 104
+    },
+    {
+      "event_id": 116,
+      "event_name": "#21 南欧編",
+      "group_id": 117,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_116",
+      "group_dir": "group_117",
+      "source_count": 449
+    },
+    {
+      "event_id": 116,
+      "event_name": "#21 南欧編",
+      "group_id": 118,
+      "group_name": "Jett班",
+      "event_dir": "event_116",
+      "group_dir": "group_118",
+      "source_count": 118
+    },
+    {
+      "event_id": 121,
+      "event_name": "#20トルコ＆キプロス編",
+      "group_id": 122,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_121",
+      "group_dir": "group_122",
+      "source_count": 114
+    },
+    {
+      "event_id": 121,
+      "event_name": "#20トルコ＆キプロス編",
+      "group_id": 125,
+      "group_name": "初見そら班",
+      "event_dir": "event_121",
+      "group_dir": "group_125",
+      "source_count": 289
+    },
+    {
+      "event_id": 126,
+      "event_name": "#19 ドバイ編 Vket2024S＆TTDコラボ",
+      "group_id": 128,
+      "group_name": "Jett班",
+      "event_dir": "event_126",
+      "group_dir": "group_128",
+      "source_count": 237
+    },
+    {
+      "event_id": 126,
+      "event_name": "#19 ドバイ編 Vket2024S＆TTDコラボ",
+      "group_id": 129,
+      "group_name": "初見そら班",
+      "event_dir": "event_126",
+      "group_dir": "group_129",
+      "source_count": 106
+    },
+    {
+      "event_id": 131,
+      "event_name": "#18 ドイツ編",
+      "group_id": 133,
+      "group_name": "Jett班",
+      "event_dir": "event_131",
+      "group_dir": "group_133",
+      "source_count": 146
+    },
+    {
+      "event_id": 131,
+      "event_name": "#18 ドイツ編",
+      "group_id": 134,
+      "group_name": "初見そら班",
+      "event_dir": "event_131",
+      "group_dir": "group_134",
+      "source_count": 358
+    },
     {
       "event_id": 155,
       "event_name": "4周年記念発表会",
@@ -9,7 +351,16 @@
       "group_name": "Deco",
       "event_dir": "event_155",
       "group_dir": "group_156",
-      "source_count": 48
+      "source_count": 47
+    },
+    {
+      "event_id": 175,
+      "event_name": "時代を超える橋編",
+      "group_id": 177,
+      "group_name": "Deco班",
+      "event_dir": "event_175",
+      "group_dir": "group_177",
+      "source_count": 191
     }
   ]
 }
