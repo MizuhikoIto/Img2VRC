@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T23:59:01+09:00",
-  "group_count": 37,
+  "generated_at": "2026-05-31T23:59:00+09:00",
+  "group_count": 40,
   "groups": [
     {
       "event_id": 6,
@@ -75,13 +75,40 @@
       "source_count": 55
     },
     {
-      "event_id": 17,
-      "event_name": "#28 アフリカ編",
-      "group_id": 37,
-      "group_name": "#29 南アジア編",
-      "event_dir": "event_17",
-      "group_dir": "group_37",
-      "source_count": 1090
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 38,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_37",
+      "group_dir": "group_38",
+      "source_count": 152
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 39,
+      "group_name": "Jett班",
+      "event_dir": "event_37",
+      "group_dir": "group_39",
+      "source_count": 398
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 40,
+      "group_name": "Ruby班",
+      "event_dir": "event_37",
+      "group_dir": "group_40",
+      "source_count": 99
+    },
+    {
+      "event_id": 37,
+      "event_name": "#29 南アジア編",
+      "group_id": 41,
+      "group_name": "かくしむ班",
+      "event_dir": "event_37",
+      "group_dir": "group_41",
+      "source_count": 434
     },
     {
       "event_id": 68,
