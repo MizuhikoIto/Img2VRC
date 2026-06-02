@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T23:59:00+09:00",
-  "group_count": 40,
+  "generated_at": "2026-06-02T23:59:00+09:00",
+  "group_count": 44,
   "groups": [
     {
       "event_id": 6,
@@ -361,6 +361,42 @@
       "event_dir": "event_175",
       "group_dir": "group_177",
       "source_count": 191
+    },
+    {
+      "event_id": 193,
+      "event_name": "#31 オーストラリア編",
+      "group_id": 194,
+      "group_name": "NEKO旅班",
+      "event_dir": "event_193",
+      "group_dir": "group_194",
+      "source_count": 88
+    },
+    {
+      "event_id": 193,
+      "event_name": "#31 オーストラリア編",
+      "group_id": 195,
+      "group_name": "Jett班",
+      "event_dir": "event_193",
+      "group_dir": "group_195",
+      "source_count": 401
+    },
+    {
+      "event_id": 193,
+      "event_name": "#31 オーストラリア編",
+      "group_id": 196,
+      "group_name": "初見そら班",
+      "event_dir": "event_193",
+      "group_dir": "group_196",
+      "source_count": 468
+    },
+    {
+      "event_id": 193,
+      "event_name": "#31 オーストラリア編",
+      "group_id": 197,
+      "group_name": "はなこα班",
+      "event_dir": "event_193",
+      "group_dir": "group_197",
+      "source_count": 314
     }
   ]
 }
