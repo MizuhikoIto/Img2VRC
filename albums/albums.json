@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T23:59:00+09:00",
+  "generated_at": "2026-06-07T23:59:04+09:00",
   "group_count": 44,
   "groups": [
     {
@@ -387,7 +387,7 @@
       "group_name": "初見そら班",
       "event_dir": "event_193",
       "group_dir": "group_196",
-      "source_count": 468
+      "source_count": 644
     },
     {
       "event_id": 193,
